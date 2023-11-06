@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Portfolio Website</title>
+        <link rel="stylesheet" href="styling.css">
+        <script src="https://kit.fontawesome.com/e39aeb8094.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/logo.jfif" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!-- <li><a href="#project">Project</a></li> -->
+                        <li><a href="#portfolio">My Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="headerContent">
+                    <div class="header-text">
+                        <p>Hi, I am Tanvi Arora. <br>I am a BCA Student</p>
+                    </div>
+                    <div class="homeImg">
+                        <img src="Images/homeImage.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------about section here---------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/BackgroundImage.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>My name is Tanvi. I am currently pursuing BCA. I like solving DSA problems and I am passionate for learning about Java and its technologies.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')" >Skills</p>
+                            <p class="tab-links active-link" onclick="openTab('education')">Education</p>
+                            <p class="tab-links active-link" onclick="openTab('achievement')">Achievements</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">  <!-- class = active-tab-->
+                            <ul>
+                                    <li>Core Java</li>
+                                    <li>Advanced Java</li>
+                                    <li>DSA</li>
+                                    <li>C++</li>
+                                    <li>HTML - CSS</li>
+                                    <li>MySql</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bachelor's of Computer Applications<span class="custom-spacing">85.2&#37</span><br>2021 - present</li>
+                                <li><span>Higher Secondary Education<span class="custom-spacing">91&#37</span></span><br>2020 - 2021</li>
+                                <li><span>Class 10th</span><span class="custom-spacing">93.4&#37</span><br>2018 - 2019</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="achievement">
+                            <ul>
+                                <li><span>Merit Holder Student (GNDU)</span><br>
+                                    <ul class="achievement-desc">
+                                        <li>Got 2nd Position in University in 2nd Year (2022-23)</li>
+                                        <li>Got 13th Position in University in 1st Year (2021-22)</li>
+                                    </ul>
+                                </li>
+                                <li><span>Got 2nd Position in Hackathon organised by College </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------project work section------------------->
+        <!--<div id="project">
+            <div class="container">
+                <h1 class="sub-title">My Project Work</h1>
+                <div class="project-list">
+                    <div>
+                        <i class="fa-brands fa-amazon"></i>
+                        <h2>Amazon Clone</h2>
+                        <p> describe about clone</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <h2>project 2</h2>
+                        <p> describe about p2</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        added these icons from font awesome web site
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>project 3</h2>
+                        <p> describe about p3</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    -->
+
+        <!--------portfolio section----------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Project Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src ="Images/amazonClone.png">
+                        <div class="layer">
+                            <h3>Amazon Homepage Clone</h3>
+                            <p>Built in HTML-CSS</p>
+                            <a href="https://github.com/tanviarora101/Amazon-Clone" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src ="Images/SmsProject.png">
+                        <div class="layer">
+                            <h3>Student Management System</h3>
+                            <p>Built in python with tkinter module </p>
+                            <a href="https://github.com/tanviarora101/Student_Management_System" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src ="Images/dataAnalysis.png">
+                        <div class="layer">
+                            <h3>Data Analysis Project</h3>
+                            <p>Made with excel dashboards and pivot tables</p>
+                            <a href="https://github.com/tanviarora101/Sales-Data-Analysis-Project" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/tanviarora101?tab=repositories" class="button" target="_blank">See more</a>
+            </div>
+        </div>
+        <!-----------------------contact section----------------------------->
+        <div id ="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p class="mail"><i class="fa-solid fa-envelope"></i><a href="mailto:tanviarora554@gmail.com" target="_blank">tanviarora554@gmail.com</p></a>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/tanvi-arora-b36933254/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/tanviarora101" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://twitter.com/TanviArora__" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        </div>
+
+                        <a href="Images/Tanvi_Resume.pdf" download class="button button-2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email Address" required>
+                            <textarea name="Message" rows="6" placeholder="Type your Message here"></textarea>
+                            <button type="submit" class="button button-2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function openTab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sideM = document.getElementById("sidemenu");
+            function openMenu(){
+                sideM.style.right = "0";
+            }
+            function closeMenu(){
+                sideM.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwKVovrDwoVg7xNRDMWh6cauzQt2yJG79YexNAOfxeW4iI_eCYqeInozmrHwSL-xdld/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
